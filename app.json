@@ -9,7 +9,7 @@
         "heroku"
     ],
     "stack": "container",
-    "repository": "https://github.com/mieckert/keycloak-heroku",
+    "repository": "https://github.com/JuliaNortman/keycloak-heroku",
     "logo": "https://www.keycloak.org/resources/images/keycloak_logo_480x108.png",
     "success_url": "/",
     "env": {
@@ -19,7 +19,7 @@
         },
         "KEYCLOAK_PASSWORD": {
             "description": "Initial Admin password",
-            "value": "change_me"
+            "value": "admin"
         },
         "PROXY_ADDRESS_FORWARDING": {
             "description": "Set to true since we will be running behind Heroku's load balancers",
@@ -29,7 +29,7 @@
     "formation": {
         "web": {
             "quantity": 1,
-            "size": "Performance-M"
+            "size": "Free"
         }
     },
     "addons": [
